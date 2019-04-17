@@ -1,6 +1,9 @@
 package com.company;
 
 import javax.naming.Name;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Iterator;
 import java.util.Scanner;
 
 public class Main {
@@ -10,9 +13,9 @@ public class Main {
     	name[0] ="Ma";
     	name[1] ="Sa";
     	name[2] ="Pa";
-	    System.out.println("Доброе утро, "+name[0]+"!");
-		System.out.println("Добрый день, "+name[1]+"!");
-		System.out.println("Добрый вечер, "+name[2]+"!");
+    	Collection collection = new ArrayList();
+    	collection.add("Ka");
+		Iterator iterator  = collection.iterator();
 
 
 		for (int i = 0; i < 3; i++){
@@ -27,9 +30,9 @@ public class Main {
 					System.out.println("Добрый вечер, "+name[i]+"!");
 					break;
 			}
-
-
 		}
+			    Object collection1 = collection; {
+		System.out.println("Здравствуй, "+iterator.next()+"!");}
 		}
 
 
